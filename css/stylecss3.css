@@ -624,4 +624,126 @@ box-decoration-break: clone;
      width: 100%;
      object-fit: cover;
  }
+ .booking-section
+ {
+     padding: 15rem 0;
+     background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+ }
+ .book
+ {
+     height: 50rem;
+     margin: 0 auto;
+     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(nat-10.jpg);
+     background-size: 100%;
+     border-radius: 3px;
+     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+ 
+ }
+ .u-margin-bottom-4
+ {
+     margin-bottom: 4rem;
+ }
+ .book-form
+ {
+     width: 50%;
+     padding: 6rem;
+ }
+ .form-group:not(:last-child)
+ {
+    margin-bottom: 2rem;
+ }
+ .input-form
+ {
+     font-size: 1.5rem;
+     font-family: inherit;
+     border-radius: 2px;
+     padding: 1.5rem 2rem;
+     border: none;
+     background-color: rbga(#fff, 0.5);
+     width: 65%;
+     display: block;
+     border-bottom: 3px solid transparent; 
+     color: inherit;
+ }
+ .input-form:focus
+ {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-bottom: 3px solid #55c57a; 
+ }
+ .input-form:focus:invalid
+ {
+    border-bottom: 3px solid orangered;
+ }
+.label-form
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+    
+}
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+.input-form:placeholder-shown + .label-form {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); 
+}
 
+.form-radio-group
+{
+    width: 35%;
+    display: inline-block;
+    float: left;
+    
+}
+.radio-label
+{
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 5rem;
+}
+.input_radio
+{
+    display: none;
+}
+.radio-btn
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid #55c57a;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+}
+.radio-btn::after
+{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #55c57a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    border-radius: 50%; 
+    display: block;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.input_radio:checked ~ .radio-label .radio-btn::after
+{
+    opacity:1;
+}
+.u-margin-top-6
+{
+    margin-top: 6rem;
+}
