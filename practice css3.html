@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Natours</title>
     <link rel="stylesheet" href="css/stylecss3.css"/>
     <link rel="stylesheet" href="css/icon-font.css">
 </head>
 <body>
+
+     <div class="navigation">
+         <input type="checkbox" class="navagation-checkbox" id="nav-toggle">
+         <label for="nav-toggle" class="navagation-btn">
+             <span class="navagation-icon">&nbsp;</span>
+         </label>
+         <div class="navagation-background">&nbsp;</div>
+         <nav class="navagation-nav">
+             <ul class="navigation-list">
+                 <li class="navagation-item"><a href="" class="navagation-link"><span>01</span>  about natous</a></li>
+                 <li class="navagation-item"><a href="" class="navagation-link"><span>02</span> your benefits</a></li>
+                 <li class="navagation-item"><a href="" class="navagation-link"><span>03</span> popular tours</a></li>
+                 <li class="navagation-item"><a href="" class="navagation-link"><span>04</span> stories</a></li>
+                 <li class="navagation-item"><a href="" class="navagation-link"><span>05</span> book now</a></li>
+             </ul>
+         </nav>
+     </div>
+
     <header class="header">
         <div class="logo_box">
             <img class="logo" src="D:\web development\[FreeTutorials.Us] Udemy - advanced-css-and-sass\advanced-css-course-master\advanced-css-course-master\Natours\after-S05\img\logo-white.png">
@@ -126,7 +144,7 @@
                                     <p class="card-only">Only</p>
                                     <p class="card-price">$154</p>
                                 </div>
-                                <a href="" class="btn btn_white">Book Now</a>
+                                <a href="#popup" class="btn btn_white">Book Now</a>
                             </div>
                          </div>
                 </div>
@@ -156,7 +174,7 @@
                                             <p class="card-only">Only</p>
                                             <p class="card-price">$154</p>
                                         </div>
-                                        <a href="" class="btn btn_white">Book Now</a>
+                                        <a href="#popup" class="btn btn_white">Book Now</a>
                                     </div>
                                  </div>
                         </div>
@@ -186,7 +204,7 @@
                                             <p class="card-only">Only</p>
                                             <p class="card-price">$154</p>
                                         </div>
-                                        <a href="" class="btn btn_white">Book Now</a>
+                                        <a href="#popup" class="btn btn_white">Book Now</a>
                                     </div>
                                  </div>
                         </div>
@@ -316,6 +334,21 @@
                         </div>
                    
                </footer>
+
+               <div class="popup" id="popup">
+                   <div class="popup-content">
+                       <div class="popup-left">
+                           <img class="popup-img" src="D:\web development\[FreeTutorials.Us] Udemy - advanced-css-and-sass\advanced-css-course-master\advanced-css-course-master\Natours\after-S05\img\nat-8.jpg" alt="book-section" >
+                           <img class="popup-img" src="D:\web development\[FreeTutorials.Us] Udemy - advanced-css-and-sass\advanced-css-course-master\advanced-css-course-master\Natours\after-S05\img\nat-9.jpg" alt="book-section" >
+                       </div>
+                       <div class="popup-right">
+                           <h2 class="heading-secondary u-margin-bottom-2 ">start booking now</h2>
+                           <h3 class="heading-ternary ">IMPORTANT – PLEASE READ THESE TERMS BEFORE BOOKING</h3>
+                           <p class="popup-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. </p>
+                           <a href="#" class="btn btn_green">book now</a>
+                        </div>
+                   </div>
+               </div>
 
            </main>
 

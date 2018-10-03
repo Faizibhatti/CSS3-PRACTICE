@@ -252,6 +252,7 @@ btn:visited
 .paragraph
 {
     font-size: 1.6rem;
+    color: #777
 }
 .paragraph:not(:last-child)
 {
@@ -361,6 +362,10 @@ btn:visited
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: transform .3s;
     
+ }
+ .feature-text__box
+ {
+     color: #777;
  }
 
 .feature-box-icon
@@ -597,6 +602,10 @@ box-decoration-break: clone;
     text-align: center;
     opacity: 0;
  }
+ .paragrapgh-story
+ {
+     color: #777;
+ }
  .story:hover .figure-caption
  {
   opacity:1;
@@ -807,5 +816,223 @@ p
     color: white;
     font-size: 1.2rem;
 }
+/* navigation */
+.navagation
+{
+
+}
+.navagation-checkbox
+{
+display: none;
+}
+.navagation-btn
+{
+ background-color: white;
+ width: 7rem;
+ height: 7rem;
+ border-radius: 50%;
+ position: fixed;
+ top: 6rem;
+ right: 6rem;
+ z-index: 2000;
+ box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+ cursor: pointer;
+}
+.navagation-item
+{
+ margin: 1rem;
+}
+span
+{
+    margin-right: 1rem;
+    display: inline-block;
+}
+.navagation-link:link, .navagation-link:visited
+{
+  display: inline-block;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: "lato", sans-serif;
+  background-size: 220%;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  transition: all .4s;
+}
+.navagation-link:hover, .navagation-link:active
+{
+background-position: 100%;
+color: #28b485;
+transform: translateX(1rem);
+}
+.navagation-background
+{
+ width: 6rem;
+ height: 6rem;
+ border-radius: 50%;
+ background-image: radial-gradient(#7ed56f, #28b485);
+ position: fixed;
+ top: 6.5rem;
+ right: 6.5rem;
+ /* transform: scale(80); */
+ z-index: 1000;
+ transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navagation-nav
+{
+ width: 0%;
+ height: 100vh;
+ top: 0;
+ left: 0;
+ position: fixed;
+ z-index: 1500;
+ opacity: 0;
+ /* visibility: hidden; */
+ transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.navigation-list
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+.navagation-checkbox:checked ~ .navagation-background
+{
+    transform: scale(80);
+}
+.navagation-checkbox:checked ~ .navagation-nav 
+{
+    width: 100%;
+    opacity: 1;
+    
+}
+.navagation-icon
+{
+    position: relative;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+}
+.navagation-icon,.navagation-icon::before, .navagation-icon::after
+{
+    width: 3rem;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    left: 0;
+}
+.navagation-icon::before, .navagation-icon::after
+{
+    content: "";
+    position: absolute;
+}
+.navagation-icon::before
+{
+    top: -.8rem;
+}
+.navagation-icon::after
+{
+    top: .8rem;
+}
+.navagation-btn:hover .navagation-icon::before
+{
+    top: -1rem;
+}
+.navagation-btn:hover .navagation-icon::after
+{
+    top: 1rem;
+}
+.navagation-checkbox:checked + .navagation-btn .navagation-icon
+{
+    background-color: transparent;
+}
+.navagation-checkbox:checked + .navagation-btn .navagation-icon::before
+{
+    transform: rotate(135deg);
+    top: 0;
+}
+.navagation-checkbox:checked + .navagation-btn .navagation-icon::after
+{
+    transform: rotate(-135deg);
+    top: 0;
+}
+
+
+/* POPUP */
+
+.popup
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.popup:target
+{
+    opacity: 1;
+    visibility: visible;
+}
+.popup-content
+{
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px; 
+    display: table;
+    overflow: hidden;
+}
+.popup-left
+{
+ width: 33.333333%;
+ /* float: left; */
+ display: table-cell;
+}
+.popup-right
+{
+   width: 66.666667%;
+   /* float: left; */
+   display: table-cell;
+   vertical-align: middle;
+   padding: 3rem 5rem;
+}
+.popup-img
+{
+    display:block;
+    width: 100%;
+}
+.popup-para
+{
+   color: #777; 
+   font-size: 1.4rem;
+   margin-bottom: 4rem;
+   column-count: 2;
+   column-gap: 4rem;
+   column-rule: 1px solid #eee;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.u-margin-bottom-2
+{
+    margin-bottom: 2rem;
+}
+
 
 
